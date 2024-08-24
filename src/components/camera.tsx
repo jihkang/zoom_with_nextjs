@@ -43,7 +43,7 @@ export default function Cam() {
     return <div>loading camera</div>;
   }
   return (
-    <div>
+    <div className="W-full h-full">
       <video
         ref={videoRef}
         autoPlay
@@ -57,6 +57,7 @@ export default function Cam() {
             videoOffRecordRef.current = false;
           }
         }}
+        className="w-full h-full object-cover"
       />
     </div>
   );
